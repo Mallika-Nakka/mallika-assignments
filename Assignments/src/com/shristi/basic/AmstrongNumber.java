@@ -8,7 +8,7 @@ public class AmstrongNumber {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("Enter Number");
 		String stringNumber = sc.next();
 
