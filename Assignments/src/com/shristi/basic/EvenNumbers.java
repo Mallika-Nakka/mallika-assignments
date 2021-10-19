@@ -8,10 +8,15 @@ public class EvenNumbers {
 		// TODO Auto-generated method stub
 		
 		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter first NUmber");
+		int firstNumber=sc.nextInt();
+		System.out.println("Enter second NUmber");
+		int secondNumber=sc.nextInt();
 		
 		
 		
-		for (int i=0;i<=20;i++) {
+		
+		for (int i=firstNumber;i<=secondNumber;i++) {
 			
 			if (i%2==0) {
 				System.out.println(i);
