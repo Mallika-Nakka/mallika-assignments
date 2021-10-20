@@ -17,6 +17,7 @@ public class DuplicatesInArray {
 			numbers[i] = sc.nextInt();
 
 		}
+		
 		int[] newArray = new int[numbers.length];
 		int visited = -1;
 		for (int i = 0; i < numbers.length; i++) {
@@ -27,6 +28,7 @@ public class DuplicatesInArray {
 					// To avoid counting same element again
 					newArray[j] = visited;
 				}
+				
 			}
 			if (newArray[i] != visited)
 				newArray[i] = count;

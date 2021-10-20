@@ -16,9 +16,7 @@ public class PatternNumbersIncreasingOrder {
 			//System.out.println(i);
 			for (int j=1;j<i;j++) {
 				pattern=pattern+n+" ";
-				if (n<10) {
-					n+=1;
-				}
+				n+=1;
 			}
 			
 			System.out.println(pattern);
