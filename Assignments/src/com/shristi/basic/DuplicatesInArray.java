@@ -6,7 +6,6 @@ public class DuplicatesInArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter length");
 		int lengthOfArray = sc.nextInt();
@@ -18,7 +17,7 @@ public class DuplicatesInArray {
 			numbers[i] = sc.nextInt();
 
 		}
-		int[] fr = new int[numbers.length];
+		int[] newArray = new int[numbers.length];
 		int visited = -1;
 		for (int i = 0; i < numbers.length; i++) {
 			int count = 1;
@@ -26,18 +25,24 @@ public class DuplicatesInArray {
 				if (numbers[i] == numbers[j]) {
 					count++;
 					// To avoid counting same element again
-					fr[j] = visited;
+					newArray[j] = visited;
 				}
 			}
-			if (fr[i] != visited)
-				fr[i] = count;
+			if (newArray[i] != visited)
+				newArray[i] = count;
 		}
 
+		int count1=0;
+		
 		// Displays the frequency of each element present in array
-		for (int i = 0; i < fr.length; i++) {
-			if (fr[i] != visited && fr[i]>1)
-				System.out.println(numbers[i] + " is repeated " + fr[i] + " times in the given array");
+		for (int i = 0; i < newArray.length; i++) {
+			if (newArray[i] != visited && newArray[i]>1)
+				count1+=newArray[i]-1;
+				//System.out.println(numbers[i] + " is repeated " + newArray[i] + " times in the given array");
 		}
+		
+		System.out.println(count1);
+		
 
 		/*
 		 * int count1 = 0;
