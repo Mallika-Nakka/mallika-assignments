@@ -28,8 +28,8 @@ public class Student {
 
 		int average = sum / marks.length;
 
-		System.out.println(sum);
-		System.out.println(average);
+		System.out.println("Sum of marks: "+sum);
+		System.out.println( "Average of marks"+average);
 
 		if (average >= 75) {
 			System.out.println("A");
