@@ -11,11 +11,13 @@ public abstract class BankATM {
 
 	abstract void withdraw(double amount);
 
-	abstract void deposit(double amount) ;
-
+	abstract void deposit(double amount);
+	
+	  
 	double getBalance() {
-		System.out.println("Balance is "+balance);
-		return balance;
-	}
-
-}
+		
+		//System.out.println("Balance is "+balance);
+		return balance; }
+	  
+	  
+	 }

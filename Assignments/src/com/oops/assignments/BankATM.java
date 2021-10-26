@@ -18,7 +18,7 @@ public class BankATM {
 	}
 
 	public double getBalance() {
-		System.out.println("Balance is "+balance);
+		//System.out.println("Balance is "+balance);
 		return balance;
 	}
 

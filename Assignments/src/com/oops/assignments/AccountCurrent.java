@@ -22,10 +22,16 @@ public class AccountCurrent extends BankATM {
 	}
 
 	void deposit(double amount) {
+		if (amount>0) {
+			balance += amount;
+			System.out.println("Deposited Successfully");
 
-		balance += amount;
-		System.out.println("Deposited Successfully");
+			
+		}else {
+			System.out.println("Enter proper amount");
+		}
 
+		
 	}
 
 }
